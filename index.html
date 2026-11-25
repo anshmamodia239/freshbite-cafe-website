@@ -1,1 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreshBite Cafe</title>
 
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fffaf2;
+    color: #333;
+}
+
+header {
+    background: #254b35;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #f5c76e;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: #f4e6ce;
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #254b35;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: #254b35;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+section {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #254b35;
+    margin-bottom: 25px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    background: white;
+    padding: 25px;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.item h3 {
+    margin: 12px 0;
+}
+
+.price {
+    color: #254b35;
+    font-weight: bold;
+}
+
+.about {
+    background: #f4e6ce;
+}
+
+footer {
+    background: #254b35;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>FreshBite Café</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Fresh Food, Happy Mood!</h2>
+    <p>Healthy meals, fresh juices and delicious bites for everyone.</p>
+    <a href="#menu" class="btn">Explore Our Menu</a>
+</section>
+
+<section id="menu">
+    <h2>Our Popular Menu</h2>
+
+    <div class="menu">
+
+        <div class="item">
+            <h3>🥪 Veg Sandwich</h3>
+            <p>Fresh vegetables and delicious flavours.</p>
+            <p class="price">₹80</p>
+        </div>
+
+        <div class="item">
+            <h3>🥗 Healthy Salad</h3>
+            <p>A fresh and nutritious meal.</p>
+            <p class="price">₹150</p>
+        </div>
+
+        <div class="item">
+            <h3>🥤 Fresh Orange Juice</h3>
+            <p>Refreshing freshly prepared juice.</p>
+            <p class="price">₹90</p>
+        </div>
+
+        <div class="item">
+            <h3>☕ Cold Coffee</h3>
+            <p>A chilled and creamy coffee.</p>
+            <p class="price">₹110</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About FreshBite Café</h2>
+    <p>
+        FreshBite Café is a friendly café offering healthy food,
+        fresh juices, sandwiches and affordable meals.
+        We aim to provide quality food and a comfortable
+        experience for students and working professionals.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: freshbitecafe@example.com</p>
+    <p>Location: Jaipur, Rajasthan, India</p>
+</section>
+
+<footer>
+    <p>© 2026 FreshBite Café | Freshness in Every Bite</p>
+</footer>
+
+</body>
+</html>
