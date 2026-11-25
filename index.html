@@ -179,6 +179,14 @@ footer {
 <footer>
     <p>© 2026 FreshBite Café | Freshness in Every Bite</p>
 </footer>
-
+<link rel="stylesheet" href="https://vdk-viber-runtime-prod.bot.botpress.host/edge/webchat.css" />
+<script src="https://vdk-viber-runtime-prod.bot.botpress.host/edge/webchat.js"></script>
+<script>
+  fetch("https://vdk-viber-runtime-prod.bot.botpress.host/edge/bots/2bcc0a3f-44c9-48eb-b845-e5a75cedbf22/config")
+    .then((res) => res.json())
+    .then(({ webchat }) =>
+      VdkEdgeWebchat.mount({ ...webchat, mode: "bubble", baseUrl: "https://vdk-viber-runtime-prod.bot.botpress.host", botId: "2bcc0a3f-44c9-48eb-b845-e5a75cedbf22" })
+    )
+</script>
 </body>
 </html>
